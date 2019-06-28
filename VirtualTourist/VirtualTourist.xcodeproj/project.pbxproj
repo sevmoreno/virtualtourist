@@ -16,8 +16,11 @@
 		65032A1B22B063F200004E56 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65032A1A22B063F200004E56 /* TableViewController.swift */; };
 		65032A1D22B15CBB00004E56 /* photoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65032A1C22B15CBB00004E56 /* photoInfo.swift */; };
 		65032A1F22B1738A00004E56 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65032A1E22B1738A00004E56 /* CollectionViewCell.swift */; };
-		65032A3C22B2B54900004E56 /* OAuthSwift.xcworkspace in Frameworks */ = {isa = PBXBuildFile; fileRef = 65032A3B22B2B54800004E56 /* OAuthSwift.xcworkspace */; };
 		6537CA0422B31139001712EB /* photoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537CA0322B31139001712EB /* photoApi.swift */; };
+		6537CA0622B7F7D2001712EB /* photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537CA0522B7F7D2001712EB /* photo.swift */; };
+		6537CA0822B7F8D4001712EB /* photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537CA0722B7F8D4001712EB /* photos.swift */; };
+		6537CA0A22B8143C001712EB /* rspstat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537CA0922B8143C001712EB /* rspstat.swift */; };
+		6537CA0C22B96FA5001712EB /* toSaveDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6537CA0B22B96FA5001712EB /* toSaveDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,11 @@
 		65032A1A22B063F200004E56 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		65032A1C22B15CBB00004E56 /* photoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoInfo.swift; sourceTree = "<group>"; };
 		65032A1E22B1738A00004E56 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		65032A3B22B2B54800004E56 /* OAuthSwift.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = OAuthSwift.xcworkspace; path = "../../../Downloads/OAuthSwift-master/OAuthSwift.xcworkspace"; sourceTree = "<group>"; };
 		6537CA0322B31139001712EB /* photoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoApi.swift; sourceTree = "<group>"; };
+		6537CA0522B7F7D2001712EB /* photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.swift; sourceTree = "<group>"; };
+		6537CA0722B7F8D4001712EB /* photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photos.swift; sourceTree = "<group>"; };
+		6537CA0922B8143C001712EB /* rspstat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rspstat.swift; sourceTree = "<group>"; };
+		6537CA0B22B96FA5001712EB /* toSaveDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toSaveDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65032A3C22B2B54900004E56 /* OAuthSwift.xcworkspace in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,14 +73,10 @@
 		65032A0422AF0AFF00004E56 /* VirtualTourist */ = {
 			isa = PBXGroup;
 			children = (
+				6537CA0D22B995DD001712EB /* Model */,
+				6537CA0F22B99640001712EB /* View */,
+				6537CA0E22B99605001712EB /* Controller */,
 				65032A0522AF0AFF00004E56 /* AppDelegate.swift */,
-				65032A0722AF0AFF00004E56 /* MapViewController.swift */,
-				65032A0922AF0AFF00004E56 /* Main.storyboard */,
-				6537CA0322B31139001712EB /* photoApi.swift */,
-				65032A1C22B15CBB00004E56 /* photoInfo.swift */,
-				65032A1A22B063F200004E56 /* TableViewController.swift */,
-				65032A0F22AF0B0100004E56 /* Assets.xcassets */,
-				65032A1E22B1738A00004E56 /* CollectionViewCell.swift */,
 				65032A1122AF0B0100004E56 /* LaunchScreen.storyboard */,
 				65032A1422AF0B0100004E56 /* Info.plist */,
 				65032A0C22AF0AFF00004E56 /* VirtualTourist.xcdatamodeld */,
@@ -86,9 +87,40 @@
 		65032A3A22B2B54800004E56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65032A3B22B2B54800004E56 /* OAuthSwift.xcworkspace */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6537CA0D22B995DD001712EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6537CA0B22B96FA5001712EB /* toSaveDisplay.swift */,
+				6537CA0522B7F7D2001712EB /* photo.swift */,
+				6537CA0922B8143C001712EB /* rspstat.swift */,
+				6537CA0722B7F8D4001712EB /* photos.swift */,
+				65032A1C22B15CBB00004E56 /* photoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6537CA0E22B99605001712EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65032A0722AF0AFF00004E56 /* MapViewController.swift */,
+				65032A1A22B063F200004E56 /* TableViewController.swift */,
+				6537CA0322B31139001712EB /* photoApi.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6537CA0F22B99640001712EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65032A1E22B1738A00004E56 /* CollectionViewCell.swift */,
+				65032A0922AF0AFF00004E56 /* Main.storyboard */,
+				65032A0F22AF0B0100004E56 /* Assets.xcassets */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,10 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6537CA0622B7F7D2001712EB /* photo.swift in Sources */,
 				65032A0822AF0AFF00004E56 /* MapViewController.swift in Sources */,
 				65032A0622AF0AFF00004E56 /* AppDelegate.swift in Sources */,
 				65032A1F22B1738A00004E56 /* CollectionViewCell.swift in Sources */,
+				6537CA0822B7F8D4001712EB /* photos.swift in Sources */,
+				6537CA0A22B8143C001712EB /* rspstat.swift in Sources */,
 				65032A1D22B15CBB00004E56 /* photoInfo.swift in Sources */,
+				6537CA0C22B96FA5001712EB /* toSaveDisplay.swift in Sources */,
 				6537CA0422B31139001712EB /* photoApi.swift in Sources */,
 				65032A0E22AF0AFF00004E56 /* VirtualTourist.xcdatamodeld in Sources */,
 				65032A1B22B063F200004E56 /* TableViewController.swift in Sources */,
